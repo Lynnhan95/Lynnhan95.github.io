@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="git,">
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hhhhan的前端博客撒">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="git是啥？？：Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git 是 Linus Torvalds（这位是linux的作者） 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。 基本操作：1.git init初始化git（注意">
+<meta name="keywords" content="git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2018.12.17 git入门">
+<meta property="og:url" content="http://yoursite.com/2018/12/17/2018-12-17-git入门/index.html">
 <meta property="og:site_name" content="Hhhhan的前端博客撒">
+<meta property="og:description" content="git是啥？？：Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git 是 Linus Torvalds（这位是linux的作者） 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。 基本操作：1.git init初始化git（注意">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-17T20:19:50.255Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hhhhan的前端博客撒">
+<meta name="twitter:title" content="2018.12.17 git入门">
+<meta name="twitter:description" content="git是啥？？：Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git 是 Linus Torvalds（这位是linux的作者） 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。 基本操作：1.git init初始化git（注意">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/17/2018-12-17-git入门/">
 
 
 
 
 
-  <title>Hhhhan的前端博客撒</title>
+  <title>2018.12.17 git入门 | Hhhhan的前端博客撒</title>
   
 
 
@@ -140,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -214,9 +218,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/17/2018-12-17-git入门/" itemprop="url">2018.12.17 git入门</a></h1>
+          <h1 class="post-title" itemprop="name headline">2018.12.17 git入门</h1>
         
 
         <div class="post-meta">
@@ -298,15 +300,11 @@
       
 
       
-        
-          
-            <p>git是啥？？：<br>Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。<br>Git 是 Linus Torvalds（这位是linux的作者） 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。<br>Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。</p>
+        <p>git是啥？？：<br>Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。<br>Git 是 Linus Torvalds（这位是linux的作者） 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。<br>Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。</p>
 <p>基本操作：<br>1.git init<br>初始化git（注意：需在项目目录下初始化）<br>example：<br>cd ~/Desktop 进入桌面目录<br>mkdir git-demo 创建项目目录<br>git init 在项目目录中创建一个.git目录，它是一个仓库；我们再git-demo中创建任意工程文件，例如：<br>index.html css/style.css(这里注意一下，需要先mkdir css创建css文件夹；直接css/style.css是不会创建新文件夹的)</p>
 <p>2.git add<br>将创建的文件加入到暂存区<br>example：<br>git add index.html  （我们仅上传一个文件<br>git add .           （我们上传整个当前目录</p>
 <p>3.git commit -v<br>将暂存区的文件正式提交到本地仓库，这个本地仓库就是.git<br>常用提交命令： git commit -m “commit message” 和 git commit -v的差别：<br>前者 -m <msg> Use the given <msg> as the commit message. If multiple -m options are given, their values are concatenated as separate paragraphs. -m命令用于提交“提交信息”；<br>后者 git commit -v Show unified diff between the HEAD commit and what would be committed at the bottom of the commit message template to help the user describe the commit by reminding what changes the commit has. -v命令用于显示提交更改。</msg></msg></p>
 
-          
-        
       
     </div>
     
@@ -321,290 +319,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/17/2018-12-17-git入门操作/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lynnhan95">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hhhhan的前端博客撒">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/17/2018-12-17-git入门操作/" itemprop="url">2018.12.17 命令行入门操作</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-17T14:34:52-05:00">
-                2018-12-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/git/" rel="tag"># git</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>基础命令行操作：<br>    1.ls<br>        What does it means?<br>        List directory contents 列出目录内容命令<br>        Others:<br>        ls -a: list directory contents, and do not ignore entries starting with)<br>        ls -l: list directory contents, and use a long listing format<br>        Example:<br>        cd ~/Desktop<br>        echo “hello,git command lines” &gt; 1.txt</p>
-<pre><code>2.cat(猫？？不不，cat是concatenate的简写)
-    What does it means?
-    Concatenate files and print on the standard output
-    文本输出命令，常用于查看文件的内容
-    三大功能：
-    a.$ cat filename 一次显示整个文件
-    b.$ cat&gt;filename 只能创建新文件，不可编辑已有文件
-    c.$cat file1 file2&gt;file将几个文件合并为一个文件
-    Example:
-    cd ~/Desktop
-    cat 2.txt
-    cat&gt;2.txt
-
-3.mv
-    What does it means?
-    move 移动命令，常用与移动文件和重命名
-    Example:
-    cd ~/Desktop
-    mv 2.txt 3.txt
-
-4.touch
-    What does it means?
-    touch filename
-    摸一下哈哈，所以先在当前目录下创建文件，touch命令课更改文档或目录的日期时间，包括存取时间和更改时间
-    Example:
-    cd ~/Desktop
-    touch 4.txt
-</code></pre><p>如何使用explainshell.com：<br>首先你要打开这个网站呗；<br>然后在灰色框框里输入需要explain的命令行；<br>按回车，解释信息即在灰色框框下方显示；<br>英文可以用狗狗translate翻译。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/17/hello-world/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lynnhan95">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hhhhan的前端博客撒">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/17/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-17T10:11:52-05:00">
-                2018-12-17
-              </time>
+              <a href="/2018/12/17/2018-12-17-git入门操作/" rel="next" title="2018.12.17 命令行入门操作">
+                <i class="fa fa-chevron-left"></i> 2018.12.17 命令行入门操作
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -614,10 +358,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -625,6 +370,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -830,6 +579,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
