@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="基础命令行操作：    1.ls        What does it means?        List directory contents 列出目录内容命令        Others:        ls -a: list directory contents, and do not ignore entries starting with)        ls -l: list di">
+<meta name="description" content="基础命令行操作：1.lsWhat does it means? List directory contents 列出目录内容命令 Others: ls -a: list directory contents, and do not ignore entries starting with) ls -l: list directory contents, and use a long listing">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2018.12.17 命令行入门操作">
 <meta property="og:url" content="http://yoursite.com/2018/12/17/2018-12-17-命令行入门操作/index.html">
 <meta property="og:site_name" content="Hhhhan的前端博客撒">
-<meta property="og:description" content="基础命令行操作：    1.ls        What does it means?        List directory contents 列出目录内容命令        Others:        ls -a: list directory contents, and do not ignore entries starting with)        ls -l: list di">
+<meta property="og:description" content="基础命令行操作：1.lsWhat does it means? List directory contents 列出目录内容命令 Others: ls -a: list directory contents, and do not ignore entries starting with) ls -l: list directory contents, and use a long listing">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-17T20:27:04.651Z">
+<meta property="og:updated_time" content="2018-12-17T20:31:07.934Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018.12.17 命令行入门操作">
-<meta name="twitter:description" content="基础命令行操作：    1.ls        What does it means?        List directory contents 列出目录内容命令        Others:        ls -a: list directory contents, and do not ignore entries starting with)        ls -l: list di">
+<meta name="twitter:description" content="基础命令行操作：1.lsWhat does it means? List directory contents 列出目录内容命令 Others: ls -a: list directory contents, and do not ignore entries starting with) ls -l: list directory contents, and use a long listing">
 
 
 
@@ -299,34 +299,31 @@
       
 
       
-        <p>基础命令行操作：<br>    1.ls<br>        What does it means?<br>        List directory contents 列出目录内容命令<br>        Others:<br>        ls -a: list directory contents, and do not ignore entries starting with)<br>        ls -l: list directory contents, and use a long listing format<br>        Example:<br>        cd ~/Desktop<br>        echo “hello,git command lines” &gt; 1.txt</p>
-<pre><code>2.cat(猫？？不不，cat是concatenate的简写)
-    What does it means?
-    Concatenate files and print on the standard output
-    文本输出命令，常用于查看文件的内容
-    三大功能：
-    a.$ cat filename 一次显示整个文件
-    b.$ cat&gt;filename 只能创建新文件，不可编辑已有文件
-    c.$cat file1 file2&gt;file将几个文件合并为一个文件
-    Example:
-    cd ~/Desktop
-    cat 2.txt
-    cat&gt;2.txt
-
-3.mv
-    What does it means?
-    move 移动命令，常用与移动文件和重命名
-    Example:
-    cd ~/Desktop
-    mv 2.txt 3.txt
-
-4.touch
-    What does it means?
-    touch filename
-    摸一下哈哈，所以先在当前目录下创建文件，touch命令课更改文档或目录的日期时间，包括存取时间和更改时间
-    Example:
-    cd ~/Desktop
-    touch 4.txt
+        <h2 id="基础命令行操作："><a href="#基础命令行操作：" class="headerlink" title="基础命令行操作："></a>基础命令行操作：</h2><h3 id="1-ls"><a href="#1-ls" class="headerlink" title="1.ls"></a>1.ls</h3><pre><code>What does it means?
+List directory contents 列出目录内容命令
+Others:
+ls -a: list directory contents, and do not ignore entries starting with)
+ls -l: list directory contents, and use a long listing format
+Example:
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/Desktop</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"hello,git command lines"</span> &gt; 1.txt</span><br></pre></td></tr></table></figure>
+</code></pre><h3 id="2-cat-猫？？不不，cat是concatenate的简写"><a href="#2-cat-猫？？不不，cat是concatenate的简写" class="headerlink" title="2.cat(猫？？不不，cat是concatenate的简写)"></a>2.cat(猫？？不不，cat是concatenate的简写)</h3><pre><code>What does it means?
+Concatenate files and print on the standard output
+文本输出命令，常用于查看文件的内容
+三大功能：
+a.$ cat filename 一次显示整个文件
+b.$ cat&gt;filename 只能创建新文件，不可编辑已有文件
+c.$cat file1 file2&gt;file将几个文件合并为一个文件
+Example:
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/Desktop</span><br><span class="line">cat 2.txt</span><br><span class="line">cat&gt;2.txt</span><br></pre></td></tr></table></figure>
+</code></pre><h3 id="3-mv"><a href="#3-mv" class="headerlink" title="3.mv"></a>3.mv</h3><pre><code>What does it means?
+move 移动命令，常用与移动文件和重命名
+Example:
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/Desktop</span><br><span class="line">mv 2.txt 3.txt</span><br></pre></td></tr></table></figure>
+</code></pre><h3 id="4-touch"><a href="#4-touch" class="headerlink" title="4.touch"></a>4.touch</h3><pre><code>What does it means?
+touch filename
+摸一下哈哈，所以先在当前目录下创建文件，touch命令课更改文档或目录的日期时间，包括存取时间和更改时间
+Example:
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/Desktop</span><br><span class="line">touch 4.txt</span><br></pre></td></tr></table></figure>
 </code></pre><p>如何使用explainshell.com：<br>首先你要打开这个网站呗；<br>然后在灰色框框里输入需要explain的命令行；<br>按回车，解释信息即在灰色框框下方显示；<br>英文可以用狗狗translate翻译。</p>
 
       
@@ -416,8 +413,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -468,6 +474,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基础命令行操作："><span class="nav-number">1.</span> <span class="nav-text">基础命令行操作：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-ls"><span class="nav-number">1.1.</span> <span class="nav-text">1.ls</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-cat-猫？？不不，cat是concatenate的简写"><span class="nav-number">1.2.</span> <span class="nav-text">2.cat(猫？？不不，cat是concatenate的简写)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-mv"><span class="nav-number">1.3.</span> <span class="nav-text">3.mv</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-touch"><span class="nav-number">1.4.</span> <span class="nav-text">4.touch</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
