@@ -92,7 +92,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/01/31/5c526624de246.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/01/31/5c5267a66d979.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/01/31/5c526fc670d84.jpg">
-<meta property="og:updated_time" content="2019-01-31T03:56:52.078Z">
+<meta property="og:updated_time" content="2019-01-31T04:09:12.707Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS 里的数据类型">
 <meta name="twitter:description" content="JS 里的数据类型number, string, boolnumber在javascript中，所有number都以64位（8字节）浮点数的形式存储; js默认使用Unicode编码，string一个字符16位(2字节).js底层没有整数，全部都是浮点数，浮点数不是精确的值，eg: 0.1 + 0.2 === 0.30000000000000004js精度（第13-64位，共52位来表示小数部分）">
@@ -327,7 +327,7 @@
 <h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>引用：js中所有变量和对象的关系，都是引用。没有指针这个说法这是c里的。</p>
 <h2 id="垃圾回收"><a href="#垃圾回收" class="headerlink" title="垃圾回收"></a>垃圾回收</h2><p>如果一个对象没有被引用，它就会被当做垃圾，被<strong>浏览器</strong>回收。</p>
 <h2 id="深copy-vs-浅copy"><a href="#深copy-vs-浅copy" class="headerlink" title="深copy vs 浅copy"></a>深copy vs 浅copy</h2><p>深拷贝：所有的基本类型的赋值，都是深拷贝；<br>浅拷贝：复杂类型的引用和赋值。</p>
-<h1 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h1><p>js中的普通对象：哈希；<br>js中的对象：树！！树！！是树。</p>
+<h1 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h1><p>js中的普通对象：哈希；<br>js中的对象：树。<br>ECMAScript描述了原型链的机制: 实现继承的主要方式。它的基本思想是利用原型让一个引用类型继承另一个引用类型的属性和方法。<br>js中，每个对象都有一个指向它的原型对象的内部链接，这个原型对象又有自己的原型，直到某个对象的原型为null为止（也就是不再有原型指向）形成了tree数据结构，这种链接结构就称为原型链。</p>
 <h2 id="公用属性（原型）"><a href="#公用属性（原型）" class="headerlink" title="公用属性（原型）"></a>公用属性（原型）</h2><p><img src="https://i.loli.net/2019/01/31/5c526fc670d84.jpg" alt="06.jpg"></p>
 <h2 id="为何没有被垃圾回收？"><a href="#为何没有被垃圾回收？" class="headerlink" title="为何没有被垃圾回收？"></a>为何没有被垃圾回收？</h2><p>因为被Object.prototype引用</p>
 <h2 id="proto-amp-prototype"><a href="#proto-amp-prototype" class="headerlink" title="proto &amp; prototype"></a><strong>proto</strong> &amp; prototype</h2><p>对象.<strong>proto</strong> === 函数.prototype<br><br>引用的是同一个对象<br>比如说：<br>var n1 = new Number(1)<br>n1.<strong>proto</strong> === Number.prototype  //true<br><br>n1.<strong>proto</strong>.<strong>proto</strong> === Object.prototype  //true<br><br><br><br>‘1’.<strong>proto</strong> === String.prototype  //true<br></p>
